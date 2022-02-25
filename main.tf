@@ -1,3 +1,4 @@
+
 resource "digitalocean_kubernetes_cluster" "cluster" {
   name         = var.cluster_name
   region       = var.do_region
@@ -13,3 +14,12 @@ resource "digitalocean_kubernetes_cluster" "cluster" {
   }
 }
 
+// provider "digitalocean"
+
+// module "node_pool" {
+//   source          = "./node_pool"
+//   name            = "Nodepool1"
+//   node_pool_size  = "s-2vcpu-4gb"
+//   node_pool_count = "2"
+//   node_pool_tags  = ""
+// }

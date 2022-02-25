@@ -10,12 +10,12 @@ variable "do_region" {
 
 variable "cluster_name" {
   description = "The name of the Kubernetes cluster"
-  default     = "koyohut_cluster"
+  default     = "koyohut-cluster"
 }
 
 variable "cluster_version" {
   description = "The version of Kubernetes to install in the cluster"
-  default     = "1.20.2-do.0"
+  default     = "1.21.9-do.0"
 }
 
 variable "cluster_tags" {
@@ -25,13 +25,13 @@ variable "cluster_tags" {
 
 variable "cluster_default_node_size" {
   description = "The size of the droplets in the default node pool in the cluster"
-  default     = "s-1vcpu-2gb"
+  default     = "s-2vcpu-4gb"
 
 }
 
 variable "cluster_default_node_count" {
   description = "The number of nodes in the default node pool in the cluster"
-  default     = 3
+  default     = 2
 }
 
 variable "cluster_default_node_tags" {
